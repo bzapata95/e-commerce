@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correo electrónico</title>
+    <style>
+      .container {
+        width: 60%;
+        margin: 0 auto;
+        padding: 24px;
+        background-color: #1f1f23;
+        *height: 100%;
+        font-family: sans-serif;
+        color: #efeff1;
+        border-radius: 5px;
+        box-shadow: #1f1f23 3px 5px 10px;
+      }
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        color: #00ff7f;
+      }
+      p {
+        text-align: center;
+        margin: 15px 0;
+      }
+      p a {
+        background-color: #00ff7f;
+        color: #0e0e10;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+      }
+      p a:hover {
+        background-color: #08ae5b;
+        color: #efeff1;
+      }
+      small {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{title}}</h1>
+      <p>{{body}}</p>
+      <p>
+        <a href="{{link}}">{{button_text}}</a>
+      </p>
+      <small>{{text_aditional}}</small>
+      <p>
+        <strong>Gracias, equipo &copy; Above merch</strong>
+      </p>
+    </div>
+  </body>
+</html>
